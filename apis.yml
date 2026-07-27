@@ -1,7 +1,25 @@
 aid: forward-platform
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/forward-platform.png
 name: Forward Platform
-description: Forward Platform is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: FORWARD Platform is a govtech SaaS company (a Techstars portfolio company) offering one
+  secure platform for administering public-benefit programs. It serves governments, nonprofits, and
+  foundations with tooling for program management, online form building, eligibility determination,
+  case management, client communication, referrals, payment disbursement, reporting and analytics,
+  and fraud prevention. FORWARD supports service-delivery programs such as guaranteed basic income,
+  housing assistance, and emergency management, and is packaged in Direct, Pro, Enterprise, and Ally
+  tiers. Enrichment found no public developer API, OpenAPI, SDKs, MCP server, or developer portal —
+  this is a product/marketing web presence only.
 url: https://raw.githubusercontent.com/api-evangelist/forward-platform/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- GovTech
+- Government
+- Nonprofits
+- Foundations
+- Program Management
+- Case Management
+- Payments
+- Public Sector
+- Service Delivery
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/forward-platform-domain-security.yml
 - type: Website
-  url: https://forwardplatform.com/
+  url: https://www.forwardplatform.com/
+- type: Blog
+  url: https://www.forwardplatform.com/blog
+- type: PrivacyPolicy
+  url: https://www.forwardplatform.com/privacy-policy
+- type: Support
+  url: https://www.forwardplatform.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
